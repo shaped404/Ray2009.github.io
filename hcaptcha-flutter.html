@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hCaptcha</title>
+  <script src="https://hcaptcha.com/1/api.js" async defer></script>
+</head>
+<body>
+<div class="h-captcha" data-sitekey="b6986155-9c9a-4c36-abb1-6a5c5e5a9dbf" data-callback="onSubmit"></div>
+<script>
+  function onSubmit(token) {
+    Toaster.postMessage(token);
+  }
+</script>
+</body>
+</html>
